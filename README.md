@@ -31,11 +31,12 @@ This project aims to address key operational challenges faced by multi-outlet bu
 ## Team
 
 Our dedicated team of five members includes:
-- **Akib Ibna Sunny** (ID: 22234103072) – Project Manager & Systems Architect
-- **Md Mehedi Hasan** (ID: 21225103380) – Lead Backend Developer
-- **Ozifa Rahman** (ID: 22234103200) – Frontend Developer
-- **Sumaia Afrose Jyoti** (ID: 22234103178) – Database & Integration Specialist
-- **Megha Hossain** (ID: 22234103000) – Quality Assurance & Testing Lead
+Akib Ibna Sunny 22234103072 UI/UX, Frontend Developers
+Sanzida Hossain 22234103161 Backend Developer
+Sumaia Afrose Joty 22234103191 Data Analyst, Machine Learning
+& Backend Developer
+Ozifa Rahman 22234103200 UI/UX, Frontend Developers
+MD. Mehedi Hasan 21225103380 Full Stack Developer
 
 ## Installation
 
