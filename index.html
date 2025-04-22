@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click2Cook</title>
+    <link rel="stylesheet" href="E:\200_Ozifa\Software Engineering\Project\styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for page transitions and specific elements */
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        /* Smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Ensure full height for each page */
+        .page {
+            min-height: 100vh;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-orange-500 text-white p-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Click2Cook</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#page1" class="nav-link hover:underline" onclick="showPage('page1')">Home</a></li>
+                <li><a href="#page2" class="nav-link hover:underline" onclick="showPage('page2')">Login</a></li>
+                <li><a href="#page3" class="nav-link hover:underline" onclick="showPage('page3')">About</a></li>
+                <li><a href="#page4" class="nav-link hover:underline" onclick="showPage('page4')">Features</a></li>
+                <li><a href="#page5" class="nav-link hover:underline" onclick="showPage('page5')">Restaurants</a></li>
+                <li><a href="#page6" class="nav-link hover:underline" onclick="showPage('page6')">Menu</a></li>
+                <li><a href="#page7" class="nav-link hover:underline" onclick="showPage('page7')">Order</a></li>
+                <li><a href="#page8" class="nav-link hover:underline" onclick="showPage('page8')">Community</a></li>
+                <li><a href="#page9" class="nav-link hover:underline" onclick="showPage('page9')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page 1: Home -->
+    <section id="page1" class="page active bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/1920x1080/?food');">
+        <div class="container mx-auto text-center text-white pt-20">
+            <h1 class="text-5xl font-bold mb-4">Click2Cook</h1>
+            <p class="text-2xl mb-8">Delicious food for every mood</p>
+            <a href="#page6" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600" onclick="showPage('page6')">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Page 2: Login/Create Account -->
+    <section id="page2" class="page bg-white">
+        <div class="container mx-auto max-w-md pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Welcome to Click2Cook</h2>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">User Login</h3>
+                <div>
+                    <label class="block text-gray-700 mb-2" for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your name" class="w-full p-2 border rounded mb-4">
+                    <label class="block text-gray-700 mb-2" for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" class="w-full p-2 border rounded mb-4">
+                    <button class="w-full bg-orange-500 text-white p-2 rounded hover:bg-orange-600">Login</button>
+                </div>
+                <p class="text-center mt-4">Don't have an account? <a href="#" class="text-orange-500 hover:underline">Create Account</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: About -->
+    <section id="page3" class="page bg-gray-50">
+        <div class="container mx-auto max-w-3xl pt-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+            <p class="text-lg mb-4">We believe that great food starts with simple, accessible tools. That's why our mission is to empower home cooks and food lovers with the resources they need to create delicious meals with confidence.</p>
+            <p class="text-lg mb-8">Join our growing community and bring flavor, creativity, and ease into your kitchen—one click at a time.</p>
+            <a href="#page2" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600" onclick="showPage('page2')">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Page 4: Features -->
+    <section id="page4" class="page bg-white">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">A Matter of Taste</h2>
+            <p class="text-center text-lg mb-8">Click2Cook is your smart cooking companion, offering easy recipes, meal planning, and kitchen tips. Because great food isn't just about cooking—it's a matter of taste, passion, and simplicity.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Fresh, Seasonal Ingredients</h3>
+                    <p>Our menu follows the seasons, featuring the best local produce available.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Comfort Food, Elevated</h3>
+                    <p>We have simple crowd-favorites on the menu—but we do them well. Our flavors stand out, guaranteed.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Better Beverages</h3>
+                    <p>We're your cafe and barista in one, serving your favorite cuppa by sun-up, and your cocktail-of-choice by sundown.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: Restaurants -->
+    <section id="page5" class="page bg-gray-50">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">The Restaurants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Burger King</h3>
+                    <p>Flame-grilled burgers, fast food royalty.</p>
+                    <a href="#page6" class="text-orange-500 hover:underline" onclick="showPage('page6')">View Menu</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">China Garden Restaurant</h3>
+                    <p>Tasty Chinese dishes, cozy dining atmosphere.</p>
+                    <a href="#page6" class="text-orange-500 hover:underline" onclick="showPage('page6')">View Menu</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-2">Bangliana Bhoj</h3>
+                    <p>Authentic Bengali flavors served with love.</p>
+                    <a href="#page6" class="text-orange-500 hover:underline" onclick="showPage('page6')">View Menu</a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#page6" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600" onclick="showPage('page6')">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6: Menu -->
+    <section id="page6" class="page bg-white">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Choose & Order Now</h2>
+            <p class="text-center text-lg mb-8">Explore our delicious menu and place your order today!</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Chicken Burger</h3>
+                    <p class="mb-4">Juicy chicken patty with fresh lettuce and sauce.</p>
+                    <p class="font-bold">210/-</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Add to Cart</button>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 7: Order -->
+    <section id="page7" class="page bg-gray-50">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Your Order</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+                <div class="flex justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Burger King</h3>
+                    <p>23/04/2025</p>
+                </div>
+                <p class="mb-4">Order #19273</p>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="search">Search Menu</label>
+                    <input type="text" id="search" placeholder="Search dishes..." class="w-full p-2 border rounded">
+                </div>
+                <div class="flex space-x-4 mb-4">
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Dine In</button>
+                    <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400">To Go</button>
+                    <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400">Delivery</button>
+                </div>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between mb-2">
+                        <p>Chicken Burger x2</p>
+                        <p>420/-</p>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <p>Chicken Burger</p>
+                        <p>210/-</p>
+                    </div>
+                    <div class="flex justify-between font-bold">
+                        <p>Total</p>
+                        <p>630/-</p>
+                    </div>
+                </div>
+                <button class="w-full mt-4 bg-orange-500 text-white p-2 rounded hover:bg-orange-600">Place Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 8: Community -->
+    <section id="page8" class="page bg-white">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">From Our Community</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Maria</h3>
+                    <p>Click2Cook is a huge part of my life. The staff feels like family, and they know just how I like my coffee and my gourmet burger fix!</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Silvia</h3>
+                    <p>I stumbled upon Click2Cook when I was exploring my new neighborhood. Everyone was so friendly, and the food was delish! Will be back.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Simuran</h3>
+                    <p>So glad to have a neighborhood juice corner, hangout spot one and nearby! Comfort food in a comforting atmosphere—need I say more?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 9: Contact -->
+    <section id="page9" class="page bg-gray-50">
+        <div class="container mx-auto max-w-md pt-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">Swing by Soon!</h2>
+            <p class="text-lg mb-4">Click2Cook</p>
+            <p class="mb-4">Block A, Avenue 1, Road 7, House 05, Dhaka 1216</p>
+            <p class="mb-4">Email: <a href="mailto:www.click2cook@gmail.com" class="text-orange-500 hover:underline">www.click2cook@gmail.com</a></p>
+            <p class="mb-8">Phone: 01925-8... 24</p>
+            <a href="#page1" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600" onclick="showPage('page1')">Back to Home</a>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to handle page navigation
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        // Initialize first page as active
+        showPage('page1');
+    </script>
+</body>
+</html>
