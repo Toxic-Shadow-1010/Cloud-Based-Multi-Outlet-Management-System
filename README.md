@@ -47,4 +47,7 @@ MD. Mehedi Hasan 21225103380 Full Stack Developer & Backend Developer
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/cloud-multi-outlet-management.git
+   git clone https://github.com/SumaiaJyoti06/cloud-multi-outlet-management.git
+
+
+
