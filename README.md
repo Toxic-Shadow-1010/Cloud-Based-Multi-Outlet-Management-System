@@ -53,7 +53,7 @@ MD. Mehedi Hasan 21225103380 Full Stack Developer & Backend Developer
 ## Database
 ### Schema Diagram
 
-![Schema Diagram](images/image.png)
+![Schema Diagram](images/image1.png)
 
 ---
 
