@@ -1,0 +1,251 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click2Cook</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for page transitions and specific elements */
+        .page {
+            display: none;
+        }
+        .page.active {
+            display: block;
+        }
+        /* Smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Ensure full height for each page */
+        .page {
+            min-height: 100vh;
+            padding: 2rem;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.top-0{top:0px}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.grid{display:grid}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-md{max-width:28rem}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-between{justify-content:space-between}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-t{border-top-width:1px}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-orange-500{--tw-bg-opacity:1;background-color:rgb(249 115 22 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-cover{background-size:cover}.bg-center{background-position:center}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pt-20{padding-top:5rem}.pt-4{padding-top:1rem}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem;line-height:1}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-orange-500{--tw-text-opacity:1;color:rgb(249 115 22 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:bg-gray-400:hover{--tw-bg-opacity:1;background-color:rgb(156 163 175 / var(--tw-bg-opacity, 1))}.hover\:bg-orange-600:hover{--tw-bg-opacity:1;background-color:rgb(234 88 12 / var(--tw-bg-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}</style></head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navigation Bar -->
+    <nav class="bg-orange-500 text-white p-4 fixed w-full top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- <img src="/img/Logo-removebg-preview.png" alt=""; width="10%" height="10%"> -->
+            <h1 class="text-2xl font-bold">Click2Cook</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#page1" class="nav-link hover:underline" onclick="showPage('page1')">Home</a></li>
+                <li><a href="#page2" class="nav-link hover:underline" onclick="showPage('page2')">Login</a></li>
+                <li><a href="#page3" class="nav-link hover:underline" onclick="showPage('page3')">About</a></li>
+                <li><a href="#page4" class="nav-link hover:underline" onclick="showPage('page4')">Features</a></li>
+                <li><a href="#page5" class="nav-link hover:underline" onclick="showPage('page5')">Restaurants</a></li>
+                <li><a href="#page6" class="nav-link hover:underline" onclick="showPage('page6')">Menu</a></li>
+                <li><a href="#page7" class="nav-link hover:underline" onclick="showPage('page7')">Order</a></li>
+                <li><a href="#page8" class="nav-link hover:underline" onclick="showPage('page8')">Community</a></li>
+                <li><a href="#page9" class="nav-link hover:underline" onclick="showPage('page9')">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page 1: Home -->
+    <section id="page1" class="page bg-cover bg-center active" style="background-image: url('https://source.unsplash.com/random/1920x1080/?food');">
+        <div class="container mx-auto text-center text-white pt-20">
+            <img src="img/Logo-removebg-preview.png" alt="Logo">
+            <h1 class="text-5xl font-bold mb-4">Click2Cook</h1>
+            <p class="text-2xl mb-8">Delicious food for every mood</p>
+            <a href="#page6" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 hover" onclick="showPage('page6')">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Page 2: Login/Create Account -->
+    <section id="page2" class="page bg-white">
+        <div class="container mx-auto max-w-md pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Welcome to Click2Cook</h2>
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-semibold mb-4">User Login</h3>
+                <div>
+                    <label class="block text-gray-700 mb-2" for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your name" class="w-full p-2 border rounded mb-4">
+                    <label class="block text-gray-700 mb-2" for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" class="w-full p-2 border rounded mb-4">
+                    <button class="w-full bg-orange-500 text-white p-2 rounded hover:bg-orange-600 hover">Login</button>
+                </div>
+                <p class="text-center mt-4">Don't have an account? <a href="#" class="text-blue-500 hover:underline">Create Account</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: About -->
+    <section id="page3" class="page bg-gray-50">
+        <div class="container mx-auto max-w-3xl pt-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">Our Mission</h2>
+            <p class="text-lg mb-4">We believe that great food starts with simple, accessible tools. That's why our mission is to empower home cooks and food lovers with the resources they need to create delicious meals with confidence.</p>
+            <p class="text-lg mb-8">Join our growing community and bring flavor, creativity, and ease into your kitchen—one click at a time.</p>
+            <a href="#page2" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600" onclick="showPage('page2')">Join Now</a>
+        </div>
+    </section>
+
+    <!-- Page 4: Features -->
+    <section id="page4" class="page bg-white">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">A Matter of Taste</h2>
+            <p class="text-center text-lg mb-8">Click2Cook is your smart cooking companion, offering easy recipes, meal planning, and kitchen tips. Because great food isn't just about cooking—it's a matter of taste, passion, and simplicity.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Fresh, Seasonal Ingredients</h3>
+                    <p>Our menu follows the seasons, featuring the best local produce available.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Comfort Food, Elevated</h3>
+                    <p>We have simple crowd-favorites on the menu—but we do them well. Our flavors stand out, guaranteed.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md text-center">
+                    <h3 class="text-xl font-semibold mb-4">Better Beverages</h3>
+                    <p>We're your cafe and barista in one, serving your favorite cuppa by sun-up, and your cocktail-of-choice by sundown.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 5: Restaurants -->
+    <section id="page5" class="page bg-gray-50">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">The Restaurants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="img/Bking.png" alt="Burger King">
+                    <h3 class="text-xl font-semibold mb-2">Burger King</h3>
+                    <p>Flame-grilled burgers, fast food royalty.</p>
+                    <a href="#page6" class="text-blue-500 hover:underline" onclick="showPage('page6')">View Menu</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="img/China Garden Restaurant.png" alt="">
+                    <h3 class="text-xl font-semibold mb-2">China Garden Restaurant</h3>
+                    <p>Tasty Chinese dishes, cozy dining atmosphere.</p>
+                    <a href="#page6" class="text-blue-500 hover:underline" onclick="showPage('page6')">View Menu</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="img/Bangliana Bhoj.png" alt="">
+                    <h3 class="text-xl font-semibold mb-2">Bangliana Bhoj</h3>
+                    <p>Authentic Bengali flavors served with love, cozy dining atmosphere.</p>
+                    <a href="#page6" class="text-blue-500 hover:underline" onclick="showPage('page6')">View Menu</a>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#page6" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600" onclick="showPage('page6')">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 6: Menu -->
+    <section id="page6" class="page bg-white">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Choose &amp; Order Now</h2>
+            <p class="text-center text-lg mb-8">Explore our delicious menu and place your order today!</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Chicken Burger</h3>
+                    <p class="mb-4">Juicy chicken patty with fresh lettuce and sauce.</p>
+                    <p class="font-bold">210/-</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add to Cart</button>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Fried Rice</h3>
+                    <p class="mb-4">Juicy chicken patty with fresh lettuce and sauce.</p>
+                    <p class="font-bold">210/-</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add to Cart</button>
+                </div>
+
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Chicken Burger</h3>
+                    <p class="mb-4">Juicy chicken patty with fresh lettuce and sauce.</p>
+                    <p class="font-bold">210/-</p>
+                    <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add to Cart</button>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 7: Order -->
+    <section id="page7" class="page bg-gray-50">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">Your Order</h2>
+            <div class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+                <div class="flex justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Burger King</h3>
+                    <p>23/04/2025</p>
+                </div>
+                <p class="mb-4">Order #19273</p>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="search">Search Menu</label>
+                    <input type="text" id="search" placeholder="Search dishes..." class="w-full p-2 border rounded">
+                </div>
+                <div class="flex space-x-4 mb-4">
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-orange-600">Dine In</button>
+                    <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400">To Go</button>
+                    <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400">Delivery</button>
+                </div>
+                <div class="border-t pt-4">
+                    <div class="flex justify-between mb-2">
+                        <p>Chicken Burger x2</p>
+                        <p>420/-</p>
+                    </div>
+                    <div class="flex justify-between mb-2">
+                        <p>Chicken Burger</p>
+                        <p>210/-</p>
+                    </div>
+                    <div class="flex justify-between font-bold">
+                        <p>Total</p>
+                        <p>630/-</p>
+                    </div>
+                </div>
+                <button class="w-full mt-4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Place Order</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 8: Community -->
+    <section id="page8" class="page bg-white">
+        <div class="container mx-auto pt-20">
+            <h2 class="text-3xl font-bold text-center mb-6">From Our Community</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Maria</h3>
+                    <p>Click2Cook is a huge part of my life. The staff feels like family, and they know just how I like my coffee and my gourmet burger fix!</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Silvia</h3>
+                    <p>I stumbled upon Click2Cook when I was exploring my new neighborhood. Everyone was so friendly, and the food was delish! Will be back.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Simuran</h3>
+                    <p>So glad to have a neighborhood juice corner, hangout spot one and nearby! Comfort food in a comforting atmosphere—need I say more?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 9: Contact -->
+    <section id="page9" class="page bg-gray-50">
+        <div class="container mx-auto max-w-md pt-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">Swing by Soon!</h2>
+            <p class="text-lg mb-4">Click2Cook</p>
+            <p class="mb-4">Block A, Avenue 1, Road 7, House 05, Dhaka 1216</p>
+            <p class="mb-4">Email: <a href="mailto:www.click2cook@gmail.com" class="text-orange-500 hover:underline mail">www.click2cook@gmail.com</a></p>
+            <p class="mb-8">Phone: 01925-8... 24</p>
+            <a href="#page1" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 hover" onclick="showPage('page1')">Back to Home</a>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript to handle page navigation
+        function showPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+        }
+
+        // Initialize first page as active
+        showPage('page1');
+    </script>
+
+</body></html>
