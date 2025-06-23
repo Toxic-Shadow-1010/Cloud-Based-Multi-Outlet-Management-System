@@ -33,11 +33,11 @@ This project aims to address key operational challenges faced by multi-outlet bu
 
 ## Technologies Used
 
-- **Backend:** Node.js/Express (or your chosen backend framework)
-- **Frontend:** React/Angular/Vue.js (or your chosen frontend framework)
-- **Database:** MongoDB/MySQL/PostgreSQL (configured for distributed management)
-- **Cloud Services:** AWS, Google Cloud, or Azure for hosting and scalability
-- **Other Tools:** Docker for containerization, Git for version control, etc.
+Code:  HTML ,  CSS, Java Script, Php
+
+Framework : Wordpress
+
+Database : MySql
 
 ## Team
 
