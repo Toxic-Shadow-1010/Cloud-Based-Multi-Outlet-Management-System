@@ -1,3 +1,14 @@
+Website Link : https://ozifa.globalsoftwarellc.com/
+
+Website main Admin link where DB , Code and Control Located :  https://ozifa.globalsoftwarellc.com/admin
+
+Access Of Admin  : 
+
+Username: ozifa
+
+Password : ozifa12345@
+
+
 # Cloud-Based Multi-Outlet Management System
 
 ## Overview
